@@ -85,7 +85,6 @@ services:
       KC_HOSTNAME: localhost
     volumes:
       - "./keycloak/realms:/opt/keycloak/data/import"
-      - "./keycloak/exports:/tmp/keycloak-export"
 
   postgres-keycloak:
     image: postgres
