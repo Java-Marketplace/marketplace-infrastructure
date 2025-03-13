@@ -83,6 +83,9 @@ services:
       KC_DB_USERNAME: postgres
       KC_DB_PASSWORD: postgres
       KC_HOSTNAME: localhost
+    volumes:
+      - "./keycloak/realms:/opt/keycloak/data/import"
+      - "./keycloak/exports:/tmp/keycloak-export"
 
   postgres-keycloak:
     image: postgres
